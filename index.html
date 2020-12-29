@@ -6,7 +6,11 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>YB_web</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/javascript.js"></script>
 </head>
 <body>
@@ -32,19 +36,186 @@
                         <div class="inputbox"><input type="text" value="密碼" onfocus="if(value == '密碼'){value = '',type = 'password'}" onblur="if(value == ''){value = '密碼',type = 'test'}"></div>
                     </li>
                     <!--按鈕-->
-                    <li>
+                    <li class="account">
                         <button class="topbtn loginbtn">登入</button>
-                        <button class="topbtn signupbtn">註冊</button>
+                        <button class="topbtn signupbtn">立即註冊</button>
+                        <button class="topbtn logoutbtn">登出</button>
                     </li>
-                    <li></li>
+                    <!--語言列-->
+                    <li>
+                        <div class="langbox">
+                            <select name="" id="">
+                                <option value="">繁體中文</option>
+                                <option value="">简体中文</option>
+                                <option value="">ENGLISH</option>
+                            </select>
+                        </div>
+                    </li>
                 </ul>
             </article>
         </section>
+        <!--下半-->
         <section class="bottom">
-
+            <!--置中外包-->
+            <article>
+                <!--LOGO-->
+                <div class="logo"></div>
+                <!--選單-->
+                <ul class="toplist">
+                    <li class="firstpage active">首頁</li>
+                    <li><span class="ic_sport"></span>體育賽事</li>
+                    <li><span class="ic_real"></span>真人遊戲</li>
+                    <li><span class="ic_slot"></span>老虎機</li>
+                    <li><span class="ic_lottery"></span>彩票</li>
+                    <li><span class="ic_fish"></span>捕魚機</li>
+                    <li><span class="ic_card"></span>棋牌遊戲</li>
+                </ul>
+                <!--未登入樣式-->
+                <p class="unlogin display"><span></span>您尚未登入</p>
+                <!--已登入樣式-->
+                <p class="loginnow">
+                    <span class="sticker redpoint"></span>
+                    a7712345677
+                    <br>
+                    <button>NT$&ensp;0.00</button>
+                    <span class="vipmark">0</span>
+                </p>
+            </article>
         </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <!--main-->
+    <main>
+        <!--置中外包-->
+        <article>
+            <!--banner-->
+            <section class="single-item">
+                <a href="#"><div class="bannerimg"></div></a>
+                <a href="#"><div class="bannerimg"></div></a>
+                <a href="#"><div class="bannerimg"></div></a>
+                <a href="#"><div class="bannerimg"></div></a>
+            </section>
+            <!--跑馬燈-->
+            <section class="marqueebox">
+                <marquee behavior="" direction="" scrollamount="1">最新公告內容，最新公告內容，最新公告內容，最新公告內容，最新公告內容，最新公告內容，最新公告內容</marquee>
+            </section>
+            <!--背景漂浮物-->
+            <section class="bg_icbox">
+                <div class="bg_ic1"></div>
+                <div class="bg_ic2"></div>
+                <div class="bg_ic3"></div>
+                <div class="bg_ic4"></div>
+                <div class="bg_ic5"></div>
+                <div class="bg_ic6"></div>
+                <div class="bg_ic7"></div>
+                <div class="bg_ic8"></div>
+                <div class="bg_ic9"></div>
+                <div class="bg_ic10"></div>
+                <div class="bg_ic11"></div>
+            </section>
+            <!--主選單-->
+            <section class="mainlist">
+                <!--體育賽事-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img ul1"></div>
+                    <div class="img ul2"></div>
+                    <div class="img ul3"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+                <!--真人-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img um1"></div>
+                    <div class="img um2"></div>
+                    <div class="img um3"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+                <!--老虎機-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img ur1"></div>
+                    <div class="img ur2"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+                <!--彩票-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img dl1"></div>
+                    <div class="img dl2"></div>
+                    <div class="img dl3"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+                <!--捕魚機-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img dm1"></div>
+                    <div class="img dm2"></div>
+                    <div class="img dm3"></div>
+                    <div class="img dm4"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+                <!--棋牌-->
+                <div class="imgbox">
+                    <a href="#"></a>
+                    <div class="word"></div>
+                    <div class="img dr1"></div>
+                    <div class="board"><span>登入遊戲</span></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!--footer-->
+    <footer>
+        <!--上部-->
+        <section class="top">
+            <!--置中外包-->
+            <article>
+                <!--下選單-->
+                <ul class="bottomlist">
+                    <li><a href="#">最新公告</a></li>
+                    <li><a href="#">優惠中心</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">VIP會員</a></li>
+                    <li><a href="#">幫助中心</a></li>
+                    <li><a href="#">加入我們</a></li>
+                </ul>
+                <p>2018 game.net 版權所有&ensp;|&ensp;18+</p>
+            </article>
+        </section>
+        <section class="bottom">
+            <article>
+                <p>
+                    致力於成為世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會優先考量客戶的利益。客戶最大的滿意就是我們的成功。
+                    <br>
+                    提供全天候24小時的在線客服，提供專業化和人性化組合的最佳服務。
+                </p>
+            </article>
+        </section>
+    </footer>
+    <!--懸浮列-->
+    <div class="fixside">
+        <!--左懸浮列-->
+        <div class="left">
+            <div class="QR"><span></span>全站APP</div>
+            <button><span></span>消息中心</button>
+            <button class="downloadbtn"><span></span>軟體下載</button>
+        </div>
+        <!--右懸浮列-->
+        <div class="right">
+            <button><span></span>在線客服</button>
+            <button><span></span>幫助中心</button>
+        </div>
+        <!--返回頂端-->
+        <button class="gotop"><span></span></button>
+    </div>
+    <button></button>
+    <!--背景-->
+    <div class="bg"></div>
 </body>
 </html>
