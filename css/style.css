@@ -198,7 +198,7 @@ html body header .top article ul li .topbtn.signupbtn, html body header .top art
   background-color: #ff6c00;
 }
 html body header .top article ul li .topbtn.signupbtn:hover, html body header .top article ul li .topbtn.signupbtn:active, html body header .top article ul li .topbtn.signupbtn.active, html body header .top article ul li .topbtn.logoutbtn:hover, html body header .top article ul li .topbtn.logoutbtn:active, html body header .top article ul li .topbtn.logoutbtn.active {
-  background: linear-gradient(to bottom, #ff3600 0%, #ff6c00 100%);
+  background: linear-gradient(to bottom, #a72300 0%, #d05000 100%);
   background-color: #ff3600;
 }
 html body header .top article ul li .langbox {
@@ -267,7 +267,7 @@ html body header .bottom article .toplist li:hover, html body header .bottom art
   border-bottom: solid 5px #cea57f;
 }
 html body header .bottom article .toplist li:hover p, html body header .bottom article .toplist li:hover span, html body header .bottom article .toplist li:active p, html body header .bottom article .toplist li:active span {
-  animation: toplist 0.6s ease-out 0s;
+  animation: toplist 0.8s ease-out 0s;
 }
 html body header .bottom article .toplist li.active {
   border-bottom: solid 5px #cea57f;
@@ -1120,10 +1120,13 @@ html body .bg {
     opacity: 0;
     top: -55px;
   }
-  56% {
+  36% {
     opacity: 1;
   }
-  61% {
+  41% {
+    top: -15px;
+  }
+  81% {
     top: 0px;
   }
 }

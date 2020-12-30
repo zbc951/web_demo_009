@@ -121,7 +121,7 @@ html {
                                     background: linear-gradient(to top, #ff3600 0%, #ff6c00 100%);
                                     background-color: #ff6c00;
                                     &:hover,&:active,&.active {
-                                        background: linear-gradient(to bottom, #ff3600 0%, #ff6c00 100%);
+                                        background: linear-gradient(to bottom, #a72300 0%, #d05000 100%);
                                         background-color: #ff3600;
                                     }
                                 }
@@ -198,7 +198,7 @@ html {
                             &:hover,&:active {
                                 border-bottom: solid 5px #cea57f;
                                 p,span {
-                                    animation: toplist 0.6s ease-out 0s;
+                                    animation: toplist 0.8s ease-out 0s;
                                 }
                             }
                             &.active {
@@ -1129,10 +1129,13 @@ html {
         opacity: 0;
         top: -55px;
     }
-    56% {
+    36% {
         opacity: 1;
     }
-    61% {
+    41% {
+        top: -15px;
+    }
+    81% {
         top: 0px;
     }
 }
