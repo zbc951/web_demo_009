@@ -173,6 +173,7 @@ html body header .top article ul li .topbtn {
   margin-right: 3px;
   color: #fff;
   font-size: 15px;
+  padding-bottom: 1px;
   /*for IE*/
   /*for IE 9*/
 }
@@ -187,8 +188,9 @@ html body header .top article ul li .topbtn {
   }
 }
 html body header .top article ul li .topbtn:hover, html body header .top article ul li .topbtn:active, html body header .top article ul li .topbtn.active {
-  background: linear-gradient(to bottom, #ff5a00 0%, #ffa200 100%);
+  background: linear-gradient(to top, #ffbe00 0%, #ff5600 100%);
   background-color: #ffa200;
+  box-shadow: 0px 0px 2px 0px #000 inset;
 }
 html body header .top article ul li .topbtn.signupbtn, html body header .top article ul li .topbtn.logoutbtn {
   margin-right: 0px;
@@ -202,6 +204,7 @@ html body header .top article ul li .topbtn.signupbtn:hover, html body header .t
 html body header .top article ul li .langbox {
   margin: -1px 0px 0px 20px;
   position: relative;
+  transform: translateY(2px);
   /*for IE*/
   /*for IE 9*/
 }
@@ -258,12 +261,23 @@ html body header .bottom article .toplist li {
   border-bottom: solid 3px transparent;
   margin: 0px 15px;
   cursor: pointer;
+  overflow: hidden;
 }
-html body header .bottom article .toplist li:hover, html body header .bottom article .toplist li:active, html body header .bottom article .toplist li.active {
+html body header .bottom article .toplist li:hover, html body header .bottom article .toplist li:active {
+  border-bottom: solid 5px #cea57f;
+}
+html body header .bottom article .toplist li:hover p, html body header .bottom article .toplist li:hover span, html body header .bottom article .toplist li:active p, html body header .bottom article .toplist li:active span {
+  animation: toplist 0.6s ease-out 0s;
+}
+html body header .bottom article .toplist li.active {
   border-bottom: solid 5px #cea57f;
 }
 html body header .bottom article .toplist li.firstpage {
   padding: 0px 15px;
+}
+html body header .bottom article .toplist li p {
+  display: inline;
+  position: relative;
 }
 html body header .bottom article .toplist li span {
   display: block;
@@ -273,6 +287,7 @@ html body header .bottom article .toplist li span {
   background-size: 600%;
   float: left;
   margin: 29px 5px 0px 0px;
+  position: relative;
 }
 html body header .bottom article .toplist li span.ic_real {
   background-position-x: 20%;
@@ -804,13 +819,13 @@ html body main article .mainlist .imgbox.hover:nth-of-type(2) .img {
   transform-origin: bottom;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(2) .img.um1 {
-  animation: img_um1 0.5s ease-out 0s;
+  animation: img_um1 0.4s ease-out 0s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(2) .img.um2 {
-  animation: img_um1 0.5s ease-out 0s, img_um2 0.3s linear 0.5s;
+  animation: img_um1 0.4s ease-out 0s, img_um2 0.3s linear 0.4s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(2) .img.um3 {
-  animation: img_um1 0.5s ease-out 0s, img_um3 0.5s linear 0.8s;
+  animation: img_um1 0.4s ease-out 0s, img_um3 0.5s linear 0.5s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(3) .img.ur1 {
   transform: rotate(30deg);
@@ -828,24 +843,24 @@ html body main article .mainlist .imgbox.hover:nth-of-type(4) .img.dl1 {
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(4) .img.dl2 {
   transform: rotate(30deg) translateY(-10%) translateX(10%);
-  animation: img_dl1 0.7s ease-out 0s, img_dl3 0.7s ease-in-out 0.7s infinite alternate;
+  animation: img_dl1 0.7s ease-out 0s, img_dl3 0.7s ease-in-out 0.4s infinite alternate;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(4) .img.dl3 {
   transform: rotate(30deg) translateY(10%) translateX(10%);
-  animation: img_dl2 0.7s ease-out 0s, img_dl4 0.8s ease-in-out 0.7s infinite alternate;
+  animation: img_dl2 0.7s ease-out 0s, img_dl4 0.8s ease-in-out 0.4s infinite alternate;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(5) .img.dm1 {
   animation: img_dm1 0.4s ease-out 0s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(5) .img.dm2 {
-  animation: img_dm2 1s ease-out 0s;
+  animation: img_dm2 0.6s ease-out 0s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(5) .img.dm3 {
   z-index: 11;
-  animation: img_dm3 0.8s ease-out 0s;
+  animation: img_dm3 0.5s ease-out 0s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(5) .img.dm4 {
-  animation: img_dm4 0.6s ease-out 0s;
+  animation: img_dm4 0.4s ease-out 0s;
 }
 html body main article .mainlist .imgbox.hover:nth-of-type(6) .img.dr1 {
   z-index: 11;
@@ -869,7 +884,7 @@ html body main article .mainlist .imgbox .board {
   position: absolute;
   bottom: 0px;
   z-index: 0;
-  background: #000;
+  background: #000000a8;
   border-radius: 0px 0px 15px 15px;
   -webkit-clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
@@ -893,13 +908,12 @@ html body main article .mainlist .imgbox .board span {
   height: 50px;
   color: #fff;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 35%;
   text-align: center;
   line-height: 50px;
   border-radius: 10px;
   border: solid 3px #fff;
-  left: 2%;
+  left: 3.5%;
   font-size: 18px;
   font-weight: bold;
   background: linear-gradient(to top, #ff5a00 0%, #ffa200 100%);
@@ -930,15 +944,16 @@ html body footer .top article .bottomlist {
 html body footer .top article .bottomlist li {
   float: left;
   line-height: 40px;
+  overflow: hidden;
 }
 html body footer .top article .bottomlist li a {
   font-size: 15px;
+  height: 100%;
+  padding: 15px;
   color: #fff;
-  margin-right: 30px;
 }
 html body footer .top article .bottomlist li a:hover, html body footer .top article .bottomlist li a:active, html body footer .top article .bottomlist li a.active {
-  color: #bacffc;
-  text-shadow: 0px 0px 1px #fff;
+  background: #2f333d;
 }
 html body footer .top article p {
   float: right;
@@ -1094,6 +1109,24 @@ html body .bg {
   z-index: -999;
 }
 
+@keyframes toplist {
+  0% {
+    top: 0px;
+  }
+  30% {
+    top: 55px;
+  }
+  31% {
+    opacity: 0;
+    top: -55px;
+  }
+  56% {
+    opacity: 1;
+  }
+  61% {
+    top: 0px;
+  }
+}
 @keyframes img_overflow {
   0% {
     overflow: hidden;
