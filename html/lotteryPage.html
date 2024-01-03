@@ -37,7 +37,7 @@
                     <!--按鈕-->
                     <li class="account">
                         <button class="topbtn loginbtn">登入</button>
-                        <button class="topbtn signupbtn">立即註冊</button>
+                        <button onclick="window.location.href='../html/register.html'" class="topbtn signupbtn">立即註冊</button>
                         <button class="topbtn logoutbtn">登出</button>
                     </li>
                     <!--語言列-->
@@ -267,23 +267,21 @@
             </div>
         </div>
     </div>
-    <aside>
-        <div class="download">
-            <div class="icon">
-                <i></i>
+        <!--懸浮列-->
+        <div class="fixside">
+            <!--左懸浮列-->
+            <div class="left">
+                <div class="QR"><span></span>全站APP</div>
+                <button><span></span>消息中心</button>
+                <button class="downloadbtn"><span></span>軟體下載</button>
             </div>
-            <div class="txt">
-                <p>手機下載</p>
+            <!--右懸浮列-->
+            <div class="right">
+                <button><span></span>在線客服</button>
+                <button><span></span>幫助中心</button>
             </div>
+            <!--返回頂端-->
+            <button class="gotop"><span></span></button>
         </div>
-        <ul class="service">
-            <li><i class="phone"></i></li>
-            <li><i class="line"></i></li>
-            <li><i class="weChat"></i></li>
-        </ul>
-        <div class="backTop display">
-            <div class="icon"></div>
-        </div>
-    </aside>
 </body>
 </html>

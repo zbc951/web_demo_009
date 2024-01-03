@@ -6,6 +6,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>YB_web</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link class="colorSystem" rel="stylesheet" href="../css_gold/colorStyle.css">
     <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -39,7 +40,7 @@
                     <!--按鈕-->
                     <li class="account">
                         <button class="topbtn loginbtn">登入</button>
-                        <button class="topbtn signupbtn">立即註冊</button>
+                        <button onclick="window.location.href='../html/register.html'" class="topbtn signupbtn">立即註冊</button>
                         <button class="topbtn logoutbtn">登出</button>
                     </li>
                     <!--語言列-->
@@ -172,7 +173,7 @@
         </div>
     </header>
     <!--main-->
-    <main>
+    <main class="home">
         <!--置中外包-->
         <article>
             <!--banner-->
@@ -266,11 +267,10 @@
                 <!--下選單-->
                 <ul class="bottomlist">
                     <li><a href="#">最新公告</a></li>
-                    <li><a href="#">優惠中心</a></li>
-                    <li><a href="#">關於我們</a></li>
-                    <li><a href="#">VIP會員</a></li>
-                    <li><a href="#">幫助中心</a></li>
-                    <li><a href="#">加入我們</a></li>
+                    <li><a href="../html/event.html">優惠中心</a></li>
+                    <li><a href="../html/help.html">關於我們</a></li>
+                    <li><a href="../html/vip.html">VIP會員</a></li>
+                    <li><a href="../html/help.html">幫助中心</a></li>
                 </ul>
                 <p>2018 game.net 版權所有&ensp;|&ensp;18+</p>
             </article>
@@ -285,6 +285,22 @@
             </article>
         </section>
     </footer>
+    <!--懸浮列-->
+    <div class="fixside">
+        <!--左懸浮列-->
+        <div class="left">
+            <div class="QR"><span></span>全站APP</div>
+            <button><span></span>消息中心</button>
+            <button class="downloadbtn"><span></span>軟體下載</button>
+        </div>
+        <!--右懸浮列-->
+        <div class="right">
+            <button><span></span>在線客服</button>
+            <button><span></span>幫助中心</button>
+        </div>
+        <!--返回頂端-->
+        <button class="gotop"><span></span></button>
+    </div>
     <div class="bg"></div>
     <!-- 彈窗 -->
     <div class="filter display">
@@ -401,23 +417,5 @@
             </div>
         </div>
     </div>
-    <aside>
-        <div class="download">
-            <div class="icon">
-                <i></i>
-            </div>
-            <div class="txt">
-                <p>手機下載</p>
-            </div>
-        </div>
-        <ul class="service">
-            <li><i class="phone"></i></li>
-            <li><i class="line"></i></li>
-            <li><i class="weChat"></i></li>
-        </ul>
-        <div class="backTop display">
-            <div class="icon"></div>
-        </div>
-    </aside>
 </body>
 </html>

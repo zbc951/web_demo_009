@@ -1,8 +1,554 @@
 .home {
     width: 100%;
     height: auto;
+    transform: translateY(130px);
     // padding: 125px 0 20px;
+    
+    //置中外包
+    article {
+        //banner
+        .single-item {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0px !important;
+            a {
+                outline: none;
+            }
+            //圖
+            .bannerimg {
+                width: 100%;
+                height: 381px;
+                background: url('../images/banner.png') no-repeat;
+                background-size: 100%;
+            }
+            //點點位置
+            .slick-dots{
+                bottom: 15px;
+            }
+            //點點間隔
+            .slick-dots li {
+                margin: 0px 5px;
+            }
+            //點點被動呈現效果
+            .slick-dots li button:before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #ababc7;
+                opacity: 1;
+                transform: rotate(45deg);
+            }
+            //點點觸發時效果
+            .slick-dots li.slick-active button:before {
+                width: 10px;//圖源大小/無圖則與被動時一樣大小
+                height: 10px;
+                opacity: 1;
+                // left: -12.5px;//移動位置=(觸發時-被動時)/2
+                // top: -12.5px;
+                background: #ffc794;
+                transform: rotate(45deg);
+            }
+            .slick-prev:before,.slick-next:before{
+                //箭頭預設圖像取消
+                font-family: none;
+                content: "";
+            }
+            .slick-next,.slick-prev{
+                //箭頭客製大小
+                width: 40px;
+                height: 40px;
+                background: rgba(0,0,0,.5);
+                border-radius: 25px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 9px;
+                    height: 17px;
+                    background: url('../images/arrow_white.png') no-repeat;
+                    top: 12px;
+                    left: 17px;
+                }
+            }
+            .slick-next{
+                //箭頭定位右側
+                right: 0px;
+            }
+            .slick-prev{
+                //箭頭定位左側
+                left: 0px;
+                z-index: 2;
+                &::before {
+                    transform: scaleX(-1);
+                    left: 15px;
+                }
+            }
+            .slick-next:hover,.slick-prev:hover{
+                //箭頭hover效果
+                background: rgba(0,0,0,.8);
+            }
+        }
 
+        //背景漂浮物
+        .bg_icbox {
+            width: 100%;
+            position: relative;
+            .bg_ic1 {
+                width: 30px;
+                height: 30px;
+                background: url('../images/bg_icon/goldball2.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                top: -400px;
+                left: -16.5%;
+                animation: bg1 3s ease-in 0s infinite;
+            }
+            .bg_ic2 {
+                width: 46px;
+                height: 41px;
+                background: url('../images/bg_icon/goldcircle3.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: -23%;
+                top: -263px;
+                animation: bg4 5s ease-in-out 0s infinite alternate;
+            }
+            .bg_ic3 {
+                width: 72px;
+                height: 47px;
+                background: url('../images/bg_icon/goldcoin.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: -12%;
+                top: -120px;
+                animation: bg3 2s ease-in-out 0s infinite alternate;
+            }
+            .bg_ic4 {
+                width: 62px;
+                height: 56px;
+                background: url('../images/bg_icon/golddice.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: -24%;
+                top: 30px;
+                animation: bg2 3s linear 0s infinite;
+            }
+            .bg_ic5 {
+                width: 35px;
+                height: 37px;
+                background: url('../images/bg_icon/goldcircle.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: -9%;
+                top: 200px;
+                animation: bg3 3s ease-in-out 0s infinite alternate;
+            }
+            .bg_ic6 {
+                width: 40px;
+                height: 40px;
+                background: url('../images/bg_icon/goldball.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: -23%;
+                top: 388px;
+            }
+            .bg_ic7 {
+                width: 46px;
+                height: 42px;
+                background: url('../images/bg_icon/golddice.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                right: -11%;
+                top: -361px;
+                transform: rotate(-110deg);
+                animation: bg2 3s linear 0s infinite;
+            }
+            .bg_ic8 {
+                width: 20px;
+                height: 20px;
+                background: url('../images/bg_icon/goldball.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                right: -18%;
+                top: -220px;
+                animation: bg1 2s ease-in 0s infinite;
+            }
+            .bg_ic9 {
+                width: 31px;
+                height: 33px;
+                background: url('../images/bg_icon/goldcircle2.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                right: -11%;
+                top: -85px;
+            }
+            .bg_ic10 {
+                width: 72px;
+                height: 47px;
+                background: url('../images/bg_icon/goldcoin.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                right: -24%;
+                top: 81px;
+                transform: rotate(25deg);
+                animation: bg3 3s ease-in-out 0s infinite alternate;
+            }
+            .bg_ic11 {
+                width: 44px;
+                height: 44px;
+                background: url('../images/bg_icon/goldball2.png') no-repeat;
+                background-size: 100%;
+                position: absolute;
+                right: -11.5%;
+                top: 288px;
+                animation: bg4 2s ease-in-out 0s infinite alternate;
+            }
+        }
+        //主選單
+        .mainlist {
+            font-size: 0px;
+            .imgbox {
+                display: inline-block;
+                width: 384px;
+                height: 184px;
+                position: relative;
+                border-radius: 15px;
+                margin: 25px 20px 0px 0px;
+                box-shadow: 0px 0px 8px 0px #1b2c88;
+                background: url('../images/main_imgbg.png') no-repeat;
+                border: solid 1px #fff;
+                //體育賽事
+                &:nth-of-type(1) {
+                    .img {
+                        width: 205px;
+                        height: 205px;
+                        background: url('../images/main_img1.png') no-repeat;
+                        background-size: 300%;
+                        position: absolute;
+                        &.ul1 {
+                            bottom: 0px;
+                            right: 35px;
+                            z-index: 3;
+                        }
+                        &.ul2 {
+                            bottom: 0px;
+                            background-position-x: 50%;
+                            right: -20px;
+                            z-index: 2;
+                        }
+                        &.ul3 {
+                            bottom: 0px;
+                            background-position-x: 100%;
+                            right: 115px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                //真人
+                &:nth-of-type(2) {
+                    background-position-x: 20%;
+                    .word {
+                        background-position-x: 20%;
+                    }
+                    .img {
+                        width: 205px;
+                        height: 205px;
+                        background: url('../images/main_img2.png') no-repeat;
+                        background-size: 300%;
+                        position: absolute;
+                        &.um1 {
+                            bottom: 0px;
+                            right: 20px;
+                            z-index: 3;
+                        }
+                        &.um2 {
+                            bottom: 0px;
+                            background-position-x: 100%;
+                            right: -50px;
+                            z-index: 2;
+                        }
+                        &.um3 {
+                            bottom: 0px;
+                            background-position-x: 50%;
+                            right: 115px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                //老虎機
+                &:nth-of-type(3) {
+                    background-position-x: 40%;
+                    margin-right: 0px;
+                    .word {
+                        background-position-x: 40%;
+                        left: -2%;
+                    }
+                    .img {
+                        width: 265px;
+                        height: 215px;
+                        background: url('../images/main_img3.png') no-repeat;
+                        background-size: 200%;
+                        position: absolute;
+                        &.ur1 {
+                            bottom: -14px;
+                            right: -20px;
+                            z-index: 3;
+                        }
+                        &.ur2 {
+                            bottom: 7px;
+                            background-position-x: 100%;
+                            right: 0px;
+                            z-index: 2;
+                        }
+                    }
+                }
+                //彩票
+                &:nth-of-type(4) {
+                    background-position-x: 60%;
+                    .word {
+                        background-position-x: 60%;
+                        left: -2%;
+                    }
+                    .img {
+                        width: 250px;
+                        height: 190px;
+                        background: url('../images/main_img4.png') no-repeat;
+                        background-size: 300%;
+                        position: absolute;
+                        &.dl1 {
+                            bottom: 0px;
+                            right: -5px;
+                            z-index: 3;
+                        }
+                        &.dl2 {
+                            bottom: 45px;
+                            background-position-x: 50%;
+                            right: 45px;
+                            z-index: 2;
+                        }
+                        &.dl3 {
+                            bottom: 45px;
+                            background-position-x: 100%;
+                            right: -50px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                //捕魚機
+                &:nth-of-type(5) {
+                    background-position-x: 80%;
+                    .word {
+                        background-position-x: 80%;
+                        left: -2%;
+                    }
+                    .img {
+                        width: 250px;
+                        height: 200px;
+                        background: url('../images/main_img5.png') no-repeat;
+                        background-size: 400%;
+                        position: absolute;
+                        &.dm1 {
+                            bottom: 0px;
+                            right: -10px;
+                            z-index: 3;
+                        }
+                        &.dm2 {
+                            bottom: 57px;
+                            background-position-x: -250px;
+                            right: 83px;
+                            z-index: 2;
+                        }
+                        &.dm3 {
+                            bottom: -70px;
+                            background-position-x: -500px;
+                            right: 93px;
+                            z-index: 4;
+                        }
+                        &.dm4 {
+                            bottom: 43px;
+                            background-position-x: -750px;
+                            right: -95px;
+                            z-index: 1;
+                        }
+                    }
+                }
+                //棋牌
+                &:nth-of-type(6) {
+                    background-position-x: 100%;
+                    margin-right: 0px;
+                    .word {
+                        background-position-x: 100%;
+                    }
+                    .img {
+                        width: 298px;
+                        height: 187px;
+                        background: url('../images/main_img6.png') no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        &.dr1 {
+                            bottom: 15px;
+                            right: -20px;
+                            z-index: 3;
+                        }
+                    }
+                }
+                //動畫觸發
+                &.hover {
+                    animation: img_overflow 0.6s linear 0s;
+                    .word {
+                        z-index: 12;
+                        transform: translateY(0%);
+                        top: 0%;
+                        animation: img_word 0.3s ease-out 0s;
+                    }
+                    .board {
+                        display: block;
+                        animation: img_button 0.3s ease-out 0s;
+                    }
+                    &:nth-of-type(1) {
+                        .img {
+                            &.ul1 {
+                                animation: img_ul1 0.5s ease-out 0s;
+                            }
+                            &.ul2 {
+                                animation: img_ul2 0.5s ease-out 0s;
+                            }
+                            &.ul3 {
+                                animation: img_ul3 0.65s ease-out 0s;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        .img {
+                            transform-origin: bottom;
+                            &.um1 {
+                                animation: img_um1 0.4s ease-out 0s;
+                            }
+                            &.um2 {
+                                animation: img_um1 0.4s ease-out 0s,img_um2 0.3s linear 0.4s;
+                            }
+                            &.um3 {
+                                animation: img_um1 0.4s ease-out 0s,img_um3 0.5s linear 0.5s;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        .img {
+                            &.ur1 {
+                                transform: rotate(30deg);
+                                z-index: 11;
+                                animation: img_ur1 0.7s ease-out 0s;
+                            }
+                            &.ur2 {
+                                transform: rotate(30deg);
+                                animation: img_ur2 0.8s ease-out 0s infinite;
+                            }
+                        }
+                    }
+                    &:nth-of-type(4) {
+                        .img {
+                            &.dl1 {
+                                transform: rotate(30deg);
+                                z-index: 11;
+                                animation: img_ur1 0.7s ease-out 0s;
+                            }
+                            &.dl2 {
+                                transform: rotate(30deg) translateY(-10%) translateX(10%);
+                                animation: img_dl1 0.7s ease-out 0s,img_dl3 0.7s ease-in-out 0.4s infinite alternate;
+                            }
+                            &.dl3 {
+                                transform: rotate(30deg) translateY(10%) translateX(10%);
+                                animation: img_dl2 0.7s ease-out 0s,img_dl4 0.8s ease-in-out 0.4s infinite alternate;
+                            }
+                        }
+                    }
+                    &:nth-of-type(5) {
+                        .img {
+                            &.dm1 {
+                                animation: img_dm1 0.4s ease-out 0s;
+                            }
+                            &.dm2 {
+                                animation: img_dm2 0.6s ease-out 0s;
+                            }
+                            &.dm3 {
+                                z-index: 11;
+                                animation: img_dm3 0.5s ease-out 0s;
+                            }
+                            &.dm4 {
+                                animation: img_dm4 0.4s ease-out 0s;
+                            }
+                        }
+                    }
+                    &:nth-of-type(6) {
+                        .img {
+                            &.dr1 {
+                                z-index: 11;
+                                transform: rotate(30deg);
+                                animation: img_ur1 0.7s ease-out 0s;
+                            }
+                        }
+                    }
+                }
+                //字
+                .word {
+                    width: 165px;
+                    height: 80px;
+                    background: url('../images/main_imgword.png') no-repeat;
+                    position: absolute;
+                    top: 50%;
+                    left: 2%;
+                    transform: translateY(-50%);
+                    z-index: 5;
+                }
+                //黑區
+                .board {
+                    display: none;
+                    width: 100%;
+                    height: 60%;
+                    position: absolute;
+                    bottom: 0px;
+                    z-index: 0;
+                    background: #000000a8;
+                    border-radius: 0px 0px 15px 15px;
+                    clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0% 100%);
+                    pointer-events: none;
+                    /*for IE*/
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                        background: transparent;
+                    }
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        background: transparent;
+                    }
+                    span {
+                        display: block;
+                        width: 100px;
+                        height: 50px;
+                        color: #fff;
+                        position: absolute;
+                        top: 35%;
+                        text-align: center;
+                        line-height: 50px;
+                        border-radius: 10px;
+                        border: solid 3px #fff;
+                        left: 3.5%;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background: linear-gradient(to top, #ff5a00 0%, #ffa200 100%);
+                        background-color: #ff5a00;
+                    }
+                }
+                //觸發區
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    position: relative;
+                    z-index: 15;
+                }
+            }
+        }
+    }
     //輪播
     .swiperGroup {
         width: 100%;
@@ -74,12 +620,6 @@
                 }
             }
         }
-    }
-    //marquee
-    .marqueeGroup {
-        width: 1400px;
-        height: 40px;
-        @include marquee;
     }
     //遊戲選單
     .gameGroup {

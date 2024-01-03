@@ -4,7 +4,8 @@
     .marqueeGroup {
         width: 1400px;
         height: 40px;
-        @include marquee;
+        margin: 0 auto;
+        // @include marquee;
     }
     
     .center {
@@ -12,7 +13,7 @@
         height: auto;
         display: flex;
         justify-content: space-between;
-        padding: 0 0 40px;
+        padding: 10px 0 40px;
         margin: 0 auto;
 
         &>div {

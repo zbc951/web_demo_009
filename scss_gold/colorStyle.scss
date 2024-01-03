@@ -213,9 +213,6 @@ header .downList .fa-solid.fa-chevron-right { //個別調整 //常駐
 }
 
 //home
-.home {
-    background: $BG_color_3;
-}
 .home .typeList .gameBlock p {
     color: $Font_Title_1;
     font-size: 26px;
@@ -344,9 +341,9 @@ main .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button
 }
 
 //event 
-main .eventWrap {
-    background: $BG_color_3;
-}
+// main .eventWrap {
+//     background: $BG_color_3;
+// }
 main .eventWrap .eventTitle p {
     color: $Font_Title_1;
     font-size: 60px;
@@ -400,9 +397,9 @@ main .eventWrap .eventBody .eventList .eventBox ul li.btnBox button.apply { //�
 }
 
 //help
-main .helpWrap {
-    background: $BG_color_3;
-}
+// main .helpWrap {
+//     background: $BG_color_3;
+// }
 main .helpWrap .helpBody .sideNav>ul {
     background: $BG_color_2;
     border-radius: 5px;
@@ -461,9 +458,9 @@ main .helpWrap .helpBody .container>div p.haveBtn {
 }
 
 //innerPage
-main.innerPage { //個別調整
-    background: $BG_color_3;
-}
+// main.innerPage { //個別調整
+//     background: $BG_color_3;
+// }
 
 //3欄背景
 main.innerPage .center>div>div:not(.listTitle),
