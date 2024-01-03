@@ -1,0 +1,94 @@
+//背景
+body .bg {
+    background: url("../images/bg.png") no-repeat ;
+    background-size: 100%;
+}
+//手機下載
+body aside .download i {
+    background: url("../images/downloadIc.png") no-repeat center;
+    background-size: contain;
+} 
+//service
+body aside .service li i {
+    background: url("../images/serviceIc.png") no-repeat;
+    background-size: 500%;
+} 
+header .navGroup .logo {
+    background: url("../images/logo.png") no-repeat center;
+    background-size: contain;
+}
+.home .swiperGroup .frontPicL {
+    background: url("../images/bannerFrontL.png") no-repeat center;
+    background-size: contain;
+}
+.home .swiperGroup .frontPicR {
+    background: url("../images/bannerFrontR.png") no-repeat center;
+    background-size: contain;
+}
+.home .marqueeGroup .decorationL {
+    background: url("../images/decorationL.png") no-repeat center;
+    background-size: contain;
+}
+.home .marqueeGroup .decorationR {
+    background: url("../images/decorationR.png") no-repeat center;
+    background-size: contain;
+}
+.home .marqueeGroup i {
+    background: url("../images/marqueeIc.png") no-repeat center;
+    background-size: contain;
+}
+
+main .eventWrap .eventTitle {
+    background: url("../images/eventTitle_bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.innerPage .marqueeGroup .decorationL {
+    background: url("../images/decorationL.png") no-repeat center;
+    background-size: contain;
+}
+.innerPage .marqueeGroup .decorationR {
+    background: url("../images/decorationR.png") no-repeat center;
+    background-size: contain;
+}
+.innerPage .marqueeGroup i {
+    background: url("../images/marqueeIc.png") no-repeat center;
+    background-size: contain;
+}
+.home .gameGroup ul li .picGroup {
+    background: url("../images/aaBg.png") no-repeat center;
+    background-size: contain;
+}
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li {
+    background: url("../images/vipLevel_01.png") no-repeat;
+    background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
+    background: url("../images/icon/svg/payWay01.svg") no-repeat center;
+    background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(2) .pay_Icon {
+    background: url("../images/icon/svg/payWay02.svg") no-repeat center;
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(3) .pay_Icon {
+    background: url("../images/icon/svg/payWay03.svg") no-repeat center;
+    background-size: 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li .medal {
+    background: url("../images/medal_01.png") no-repeat;
+    background-size: 100%;
+}
+
+.registerWrap .signUpBlock .decPic {
+    background: url(../images/register_background2.png) no-repeat center;
+    background-size: cover;
+}

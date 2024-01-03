@@ -1,0 +1,6 @@
+@function pxTovw($px){
+    @return $px * 100 / 1200 +vw;
+}
+@function pxTorem($px){
+    @return $px / 16 + rem ;
+}

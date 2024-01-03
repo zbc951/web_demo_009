@@ -1,0 +1,577 @@
+//header
+header {
+    width: 100%;
+    height: auto;
+    background: $headerBg_2;
+    box-shadow: 0 1px 10px 1px #00000024;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .top {
+        width: 100%;
+        height: 40px;
+        background: $headerBg_3;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        
+        //登入
+        .login {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+           
+
+            &::before {
+                content:"";
+                background: $headerBg_1;
+                width: 1270px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                right: -10px;
+                transform: skew(-30deg);
+                
+            }
+            form {
+                width: auto;
+                height: auto;
+                display: flex;
+                
+                label {
+                    width: auto;
+                    height: auto;
+                    margin: 0 10px;
+                    display: inline-block;
+                    position: relative;
+
+                    &::before {
+                        content:"";
+                        position: absolute;
+                        width: 125px;
+                        height: 25px;
+                        top: 50%;
+                        left: -10px;
+                        z-index: 1;
+                        background: $inputBg_1;
+                        transform: skewX(-30deg)translateY(-50%);
+                        border: 0.5px solid $inputBorder_1;
+                    }
+                    
+                    input {
+                        width: 120px;
+                        height: 25px;
+                        background: transparent;
+                        color: $placeholder_1;
+                        position: relative;
+                        z-index: 2;
+                        padding-left: 10px;
+                        
+                        &::placeholder {
+                            font-size: 15px;
+                            color: $placeholder_1;
+                        }
+                    }
+                }
+                .buttonGroup {
+                    width: 100%;
+                    height: auto;
+                    margin-left: 20px;
+                    display: flex;
+                    
+                    a {
+                        width: 100%;
+                        height: auto;
+                        
+                        .loginBtn {
+                            width: 50px;
+                            height: 25px;
+                            background: $buttonbg_1;
+                            margin: 0 5px;
+                            transform: skewX(-30deg);
+                            border: 0.5px solid $buttonTxt_1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            p {
+                                color: $mainColor_1;
+                                font-size: 15px;
+                                transform: skewX(30deg);
+                            }
+                            &:hover,&:active,&.active {
+                                background: $buttonbg_3;
+                                border: 0.5px solid $borderColor_1;
+
+                                p {
+                                    color: $borderColor_1;
+                                }
+                            }
+                        }
+                        .Register {
+                            width: 50px;
+                            height: 25px;
+                            background: $buttonbg_2;
+                            margin: 0 5px;
+                            transform: skewX(-30deg);
+                            border: 0.5px solid $buttonTxt_2;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            p {
+                                color: $buttonTxt_2;
+                                font-size: 15px;
+                                transform: skewX(30deg);
+                            }
+
+                            &:hover,&:active,&.active {
+                                background: $buttonbg_4;
+                                border: 0.5px solid $borderColor_1;
+
+                                p {
+                                    color: $borderColor_1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //忘記密碼
+            .forget {
+                width: 120px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                padding: 0 20px 0 10px;
+                z-index: 2;
+    
+                i {
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid $forgetColor_1;
+                    border-radius: 50%;
+                    font-size: 15px;
+                    color: $forgetColor_1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 5px;
+                }
+    
+                a {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: $forgetColor_1;
+                    text-decoration: underline;
+                }
+            }
+            .language {
+                width: auto;
+                height: auto;
+                position: relative;
+                padding-left: 0px;
+
+                select {
+                    width: 80px;
+                    height: 25px;
+                    background: transparent;
+                    flex-shrink: 0;
+                    margin-left: 10px;
+                    position: relative;
+                    z-index: 2;
+                    color: $selectTxt_1;
+                    font-size: 15px;
+                    
+                    option {
+                        width: 100%;
+                        height: auto;
+                        background: $optionBg_1;
+                        color: $optionTxt_1;
+                    }
+                } 
+                i {
+                    width: 10px;
+                    height: 10px;
+                    border-style: solid;
+                    border-width: 0 2px 2px 0 ;
+                    border-color: transparent $selectTxt_1 $selectTxt_1 transparent;
+                    position: absolute;
+                    top: 5px;
+                    transform: rotate(45deg);
+                    right: 0;
+                    z-index: 2;
+                }
+                &::before {
+                    content:"";
+                    position: absolute;
+                    width: 100px;
+                    height: 25px;
+                    top: 50%;
+                    left: -8px;
+                    z-index: 1;
+                    background: $inputBg_1;
+                    transform: skewX(-30deg)translateY(-50%);
+                    border: 1px solid $selectTxt_1;
+                }
+            }
+        }
+        //登入後
+        .afterLogin {
+            width: 1400px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            
+            &::before {
+                content:"";
+                background: $headerBg_1;
+                width: 1270px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                right: -10px;
+                transform: skew(-30deg);
+                z-index: -9;
+            }
+            .center {
+                width: 1400px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .id {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-end;
+        
+                        p {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #7d0022;
+                        }
+                        em {
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #814c00;
+                            padding: 0 10px;
+                        }
+                    }
+                    .wallet {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+        
+                        .total {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            padding: 0 20px;
+                            border: 1px solid #7d0022;
+                            background: #ffffff;
+                            margin-right:10px;
+                            cursor: pointer;
+
+                            // &:hover,&:active,&.active {
+                            //     background: $buttonbg_7;
+                            //     color: $borderColor_4;
+                            //     border: 1px solid $borderColor_4;
+
+                            //     i {
+                            //         border-color: $borderColor_4 $borderColor_4 transparent transparent;
+                            //     }
+                            // }
+
+                            .moneyTotal {
+                                margin-right: 10px;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+
+                            .faSolid {
+                                width: 8px;
+                                height: 8px;
+                                border-width: 5px 5px 0 5px;
+                                border-style: solid;
+                                border-color: #000000 transparent #000000 transparent;
+                                -webkit-transform: rotate(135deg);
+                                transform: rotate(0deg);
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+
+                                &.faSortDown {
+                                    margin-bottom: 5px;
+                                }
+        
+                                &.faChevronDown {
+                                    margin: 2px 0 0 2px;
+                                }
+                            }
+        
+                            //平台點數
+                            .transferInfo {
+                                display: none;
+                                width: 290px;
+                                height: auto;
+                                position: absolute;
+                                top: 33px;
+                                left: 0;
+                                z-index: 25;
+        
+                                &.display {
+                                    display: block;
+                                    background: #ffe9c8;
+                                }
+        
+                                .platform {
+                                    width: 100%;
+                                    height: auto;
+                                    border-right: none;
+                                    box-shadow: none;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 15px;
+                                    border: 1px solid #7d0022;
+                                    border-bottom: 0;
+
+                                    &:last-child {
+                                        border-bottom: 1px solid #7d0022;
+                                    }
+
+                                    p {
+                                        font-weight: bold;
+                                        color: #000000;
+
+                                        span {
+                                            color: #C70036;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .buttonGroup {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+        
+                            button {
+                                width: 70px;
+                                height: 28px;
+                                background: $buttonbg_5;
+                                color: $mainColor_2;
+                                border: 1px solid $borderColor_2;
+                                font-size: 15px;
+                                font-weight: bold;
+                                // padding: 0 10px;
+                                margin: 0 5px;
+                                border-radius: 2px;
+                                
+                                &:hover,&:active,&.active {
+                                    background: $buttonbg_7;
+                                    color: $borderColor_4;
+                                    border: 1px solid $borderColor_4;
+                                }
+        
+                                &:last-child {
+                                    background: $buttonbg_6;
+                                    color: $mainColor_1;
+                                    border: 1px solid $borderColor_3;
+        
+                                    &:hover,&:active,&.active {
+                                        background: $buttonbg_3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .language {
+                        width: auto;
+                        height: auto;
+                        position: relative;
+        
+                        select {
+                            width: 87px;
+                            height: 28px;
+                            font-size: 15px;
+                            font-weight: bold;
+                            padding-left: 5px;
+                            background: $buttonbg_6;
+                            color: $mainColor_1;
+                            border: 1px solid $borderColor_3;
+                            border-radius: 2px;
+        
+                            &:hover,&:active,&.active {
+                                background: $buttonbg_4;
+                            }
+                            option {
+                                color: #000;
+                            }
+                        }
+
+                        i {
+                            width: 8px;
+                            height: 8px;
+                            border-width: 2px 2px 0 0;
+                            border-style: solid;
+                            border-color: #ffffff #ffffff transparent transparent;
+                            transform: rotate(135deg);
+                            position: absolute;
+                            top: 9px;
+                            right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //nav
+    .navGroup {
+        width: 1400px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .logo {
+            width: 210px;
+            height: 37px;
+        }
+
+        ul {
+            width: 1000px;
+            height: auto;
+            display: flex;
+
+            li {
+                width: 100%;
+                height: auto;
+                transform: skewX(-30deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover,&:active,&.active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
+                    background: $navHoverBg_1;
+                    box-shadow: 0px 0px 5px $shadowColor_1;
+                    position: relative;
+
+                    p {
+                        color: $mainColor_1;
+                    }
+
+                    &::after {
+                        content:"";
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        height: 5px;
+                        background: $navHover_2;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $mainColor_2;
+                    text-align: center;
+                    transform: skewX(30deg);
+                }
+            }
+        }
+    }
+    //下拉選單
+    .downList {
+        width: 100%;
+        height: auto;
+        // overflow: hidden;
+        position: absolute;
+        top: 120px;
+        left: 0;
+        transition: 0.3s all;
+        display: none;
+
+        &.display {
+            display: block;
+        }
+        .listWrap {
+            width: 100%;
+            height: 230px;
+            background: #00000073;
+
+            .center {
+                width: 1400px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+    
+                ol {
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    align-items: center;
+                    
+                    &.display {
+                        display: flex;
+                    }
+                    
+                    li {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        margin: 10px 50px 0 0 ;
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                        p { 
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #ffffff;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

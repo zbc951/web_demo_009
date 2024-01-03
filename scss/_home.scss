@@ -1,0 +1,280 @@
+.home {
+    width: 100%;
+    height: auto;
+    // padding: 125px 0 20px;
+
+    //輪播
+    .swiperGroup {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        .frontPicL {
+            width: 305px;
+            height: 484px;
+            position: absolute;
+            top: 50%;
+            left: 310px;
+            transform: translateY(-50%);
+            z-index: 2;
+            animation: frontPic 1.5s linear 1s infinite;
+        }
+        .frontPicR {
+            width: 281px;
+            height: 484px;
+            position: absolute;
+            top: 50%;
+            right: 210px;
+            transform: translateY(-50%);
+            z-index: 2;
+            animation: frontPic 1.5s linear infinite;
+        }
+        @keyframes frontPic {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        .swiper {
+            width: 100%;
+            height: auto;
+    
+            .swiper-wrapper {
+    
+                .swiper-slide {
+    
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .swiper-pagination {
+                bottom: 40px;
+
+                .swiper-pagination-bullet {
+                    background: $swiperBullet_2;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 12px;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active {
+                    background: $swiperBullet_1;
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 12px;
+                }
+            }
+        }
+    }
+    //marquee
+    .marqueeGroup {
+        width: 1400px;
+        height: 40px;
+        @include marquee;
+    }
+    //遊戲選單
+    .gameGroup {
+        width: 1400px;
+        height: auto;
+        margin: 45px auto;
+
+        ul {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 80px 0;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 -24px;
+
+                .picGroup {
+                    width: 393px;
+                    height: 219px;
+                    position: relative;
+                    animation: front 2s linear infinite;
+                    cursor: pointer;
+                    
+                    &:hover,&:active,&.active {
+
+                        img {
+                            animation: gameHover 1s linear 0.5s infinite;
+
+                            &.bbbslot,&.cccslot {
+                                animation: slot 1.5s linear 0.5s infinite;
+                                transform-origin: bottom right;
+
+                                @keyframes slot {
+                                    0% {
+                                        transform: scale(1);
+                                        opacity: 1;
+                                    }
+                                    25% {
+                                        transform: scale(1.05);
+                                        opacity: 0.8;
+                                    }
+                                    50% {
+                                        transform: scale(0.95);
+                                        opacity: 1;
+                                    }
+                                    75% {
+                                        transform: scale(1.05);
+                                        opacity: 0.8;
+                                    }
+                                    100% {
+                                        transform: scale(1);
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            &.abcboard,&.abcticket {
+                                animation: abcPic 1.5s linear 0.5s infinite;
+
+                                @keyframes abcPic {
+                                    0% {
+                                        transform: scale(1);
+                                    }
+                                    25% {
+                                        transform: scale(1.05);
+                                    }
+                                    50% {
+                                        transform: scale(0.95);
+                                    }
+                                    75% {
+                                        transform: scale(1.05);
+                                    }
+                                    100% {
+                                        transform: scale(1);
+                                    }
+                                }
+                            }
+                            &.abcsport {
+                                animation: abcSport 1s linear 0.5s infinite;
+                                transform-origin: bottom left;
+
+                                @keyframes abcSport {
+                                    0% {
+                                        transform: scaleX(1);
+                                    }
+                                    25% {
+                                        transform: scaleX(1.1);
+                                    }
+                                    50% {
+                                        transform: scale(0.95);
+                                    }
+                                    75% {
+                                        transform: scale(1.05);
+                                    }
+                                    100% {
+                                        transform: scale(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .frontPic {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+
+                        img {
+                            width: auto;
+                            height: auto;
+                            object-fit: contain;
+                            position: absolute;
+                            transform-origin: bottom;
+                            
+
+                            &.aalive {
+                                bottom: 5px;
+                                left: 70px;
+                            }
+                            &.sslive {
+                                bottom: 5px;
+                                left: 90px;
+                            }
+                            &.bbbslot {
+                                bottom: 5px;
+                                left: 115px;
+                            }
+                            &.cccslot {
+                                bottom: 5px;
+                                left: 35px;
+                            }
+                            &.abcboard {
+                                bottom: -55px;
+                                left: 50px;
+                            }
+                            &.abcticket {
+                                bottom: -35px;
+                                left: 45px;
+                            }
+                            &.abcsport {
+                                bottom: 5px;
+                                left: 45px;
+                            }
+                            &.ttfish {
+                                bottom: 5px;
+                                left: 32px;
+                            }
+                        }
+                        @keyframes front {
+                            0% {
+                                transform: scale(1);
+                            }
+                            50% {
+                                transform: scale(1.02);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+                        @keyframes gameHover {
+
+                            0% {
+                                transform: translateX(0)scaleX(1)scaleY(1);
+                            }
+                            25% {
+                                transform: translateX(-20px)scaleX(0.95)scaleY(1.02);
+                            }
+                            50% {
+                                transform: translateX(-10px)scaleX(1.02)scaleY(0.98);
+                            }
+                            75% {
+                                transform: translateX(-5px)scaleX(1.02)scaleY(0.95);
+                            }
+                            100% {
+                                transform: translateX(0)scaleX(1)scaleY(1);
+                            }
+                        }
+                    }
+                }
+                p {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: $gameTitle_1;
+                    margin-right: 50px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

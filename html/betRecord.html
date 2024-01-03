@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ZH-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <link rel="stylesheet" href="../css/style.css">
+    <link class="colorSystem" rel="stylesheet" href="../css_gold/colorStyle.css">
+    <link rel="shortcut icon" href="../images/NTLOGO_64x64.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="top">
+            <!-- 登入後 -->
+            <div class="afterLogin">
+                <div class="center">
+                    <ul>
+                        <li class="id">
+                            <p>一般會員</p>
+                            <em>opp122</em>
+                        </li>
+                        <li class="wallet">
+                            <div class="total">
+                                <p class="moneyTotal">9999</p>
+                                <i class="faSolid faSortDown"></i>
+                                <!-- 平台點數 -->
+                                <div class="transferInfo">
+                                    <div class="platform">
+                                        <p>BNG娛樂</p>
+                                        <p class="money">
+                                            <span></span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>pls</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>SimplePlay</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>歐博</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>SG</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>RTG</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>IFUN</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>WM</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>GS</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>必贏</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>36588體育</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>RSG</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                    <div class="platform">
+                                        <p>PNG</p>
+                                        <p class="money">
+                                            <span>0</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttonGroup">
+                                <button onclick="window.location.href='../html/deposit.html'">存款</button>
+                                <button onclick="window.location.href='../html/transfer.html'">轉帳</button>
+                                <button onclick="window.location.href='../html/withdraw.html'">提款</button>
+                                <button onclick="window.location.href='../html/member.html'">會員中心</button>
+                                <button onclick="window.location.href='../html/mail.html'">站內信</button>
+                                <a href="../index.html"><button>登出</button></a>
+                            </div>
+                        </li>
+                        <li class="language">
+                            <select name="" id="">
+                                <option value="">繁體中文</option>
+                                <option value="">簡體中文</option>
+                                <option value="">English</option>
+                                <option value="">日本語</option>
+                            </select>
+                            <i></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navGroup">
+            <div class="logo"></div>
+            <ul>
+                <li class="" onclick="window.location.href='../html/innerpage.html'"><p>首頁</p></li>
+                <li class="sport" onclick="window.location.href='../html/sportPage.html'"><p>體育賽事</p></li>
+                <li class="live" onclick="window.location.href='../html/livePage.html'"><p>真人娛樂</p></li>
+                <li class="slot" onclick="window.location.href='../html/slotPage.html'"><p>老虎機</p></li>
+                <li class="ticket" onclick="window.location.href='../html/lotteryPage.html'"><p>彩票</p></li>
+                <li class="fish" onclick="window.location.href='../html/fishPage.html'"><p>捕魚機</p></li>
+                <li class="board" onclick="window.location.href='../html/boardPage.html'"><p>棋牌遊戲</p></li>
+                <li onclick="window.location.href='../html/event.html'"><p>優惠</p></li>
+                <li class="" onclick="window.location.href='../html/vip.html'"><p>VIP會員</p></li>
+            </ul>
+        </div>
+        <!-- 下拉選單 -->
+        <div class="downList ">
+            <div class="listWrap">
+                <div class="center">
+                    <ol class="sport">
+                        <li>
+                            <img src="../images/36588.png" alt="">
+                            <p>36588</p>
+                        </li>
+                    </ol>
+                    <ol class="live">
+                        <li>
+                            <img src="../images/downlist2.png" alt="">
+                            <p>MW真人娛樂</p>
+                        </li>
+                        <li>
+                            <img src="../images/downlist1.png" alt="">
+                            <p>DG真人娛樂</p>
+                        </li>
+                    </ol>
+                    <ol class="slot">
+                        <li>
+                            <img src="../images/slot_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/slot_4.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images//slot_3.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="ticket">
+                        <li>
+                            <img src="../images/fish_1.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="fish">
+                        <li>
+                            <img src="../images/fish_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/fish_2.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/fish_3.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/fish_4.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                    <ol class="board">
+                        <li>
+                            <img src="../images/board_1.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/board_2.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/board_3.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/board_4.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/board_5.png" alt="">
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="../images/board_6.png" alt="">
+                            <p></p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="innerPage">
+        <!-- 跑馬燈 -->
+        <div class="marqueeGroup">
+            <div class="trapezoid"></div>
+            <div class="decorationL"></div>
+            <i></i>
+            <div class="marquee">
+                <p>我是跑馬燈我是跑馬燈我是跑馬燈我是跑馬燈</p>
+            </div>
+            <div class="decorationR"></div>
+        </div>
+        <dic class="center">
+            <!-- 左欄 -->
+            <div class="leftSide">
+                <div class="content">
+                    <p class="userAccount">
+                        bbb123
+                        <span class="level">
+                            VIP20
+                        </span>
+                    </p>
+                    <p class="joinDay">加入通博第 799 天</p>
+                    <ul class="quickSelect">
+                        <li>
+                            <div class="quickBtn">
+                                <a href="./deposit.html">
+                                    <p>存</p>
+                                </a>
+                            </div>
+                            <p class="btnName">存款</p>
+                        </li>
+                        <li>
+                            <div class="quickBtn">
+                                <a href="./transfer.html">
+                                    <p>轉</p>
+                                </a>
+                            </div>
+                            <p class="btnName">轉帳</p>
+                        </li>
+                        <li>
+                            <div class="quickBtn">
+                                <a href="./withdraw.html">
+                                    <p>提</p>
+                                </a>
+                            </div>
+                            <p class="btnName">提款</p>
+                        </li>
+                    </ul>
+                    <ul class="innerNav">
+                        <li>
+                            <a href="./member.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>個人資料</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./invite.html">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <p>邀請會員</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./vip.html">
+                                <i class="fa-solid fa-crown"></i>
+                                <p>VIP會員</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./wallet.html">
+                                <i class="fa-solid fa-wallet"></i>
+                                <p>我的錢包</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./bankCard.html">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>綁定銀行卡</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./dealRecord.html">
+                                <i class="fa-regular fa-file-lines"></i>
+                                <p>交易紀錄</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./point.html">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <p>查詢紅利</p>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="./betRecord.html">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>投注紀錄</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./eventApply.html">
+                                <i class="fa-solid fa-tag"></i>
+                                <p>優惠申請</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./mail.html">
+                                <i class="fa-regular fa-envelope"></i>
+                                <p>站內信</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中欄 -->
+            <div class="midSide betRecord">
+                <div class="midBottom">
+                    <div class="content display">
+                        <div class="innerPageTitle">
+                            <p>投注紀錄</p>
+                        </div>
+                        <form class="searchBlock">
+                            <label>
+                                <p class="itemName">
+                                    <span></span>
+                                    帳戶
+                                </p>
+                                <select class="inputStyle_1">
+                                    <option>全帳戶</option>
+                                </select>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </label>
+                            <label>
+                                <p class="itemName">
+                                    <span></span>
+                                    平台
+                                </p>
+                                <select class="inputStyle_1">
+                                    <option>全平台</option>
+                                </select>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </label>
+                            <label></label>
+                            <label>
+                                <p class="itemName">
+                                    <span></span>
+                                    日期
+                                </p>
+                                <input type="date" class="inputStyle_1">
+                                <i class="fa-regular fa-calendar"></i>
+                            </label>
+                            <div class="selectBtn_Wrap">
+                                <button type="button" class="btnStyle_3">昨天</button>
+                                <button type="button" class="btnStyle_3 active">今天</button>
+                                <button type="button" class="btnStyle_3">本週</button>
+                                <button type="button" class="btnStyle_3">本月</button>
+                                <span class="hint">只能查詢60天內的資料</span>
+                            </div>
+                            <button type="submit" class="btnStyle_1 searchBtn">查詢</button>
+                        </form>
+                        <ul class="recordList">
+                            <div class="titleWrap">
+                                <p>遊戲平台</p>
+                                <p>下注金額</p>
+                                <p>有效下注</p>
+                                <p>小費</p>
+                                <p>結果</p>
+                                <p></p>
+                            </div>
+                            <li class="active">
+                                <div class="detailWrap">
+                                    <p>Pls電子娛樂</p>
+                                    <p>108</p>
+                                    <p>108</p>
+                                    <p>0</p>
+                                    <p class="lose">-98.0000</p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <p>時間</p>
+                                        </th>
+                                        <th>
+                                            <p>遊戲名稱</p>
+                                        </th>
+                                        <th>
+                                            <p>注單號</p>
+                                        </th>
+                                        <th>
+                                            <p>下注金額</p>
+                                        </th>
+                                        <th>
+                                            <p>有效下注</p>
+                                        </th>
+                                        <th>
+                                            <p>小費</p>
+                                        </th>
+                                        <th>
+                                            <p>結果</p>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <div class="detailWrap">
+                                    <p>Pls電子娛樂</p>
+                                    <p>108</p>
+                                    <p>108</p>
+                                    <p>0</p>
+                                    <p class="lose">-98.0000</p>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <p>時間</p>
+                                        </th>
+                                        <th>
+                                            <p>遊戲名稱</p>
+                                        </th>
+                                        <th>
+                                            <p>注單號</p>
+                                        </th>
+                                        <th>
+                                            <p>下注金額</p>
+                                        </th>
+                                        <th>
+                                            <p>有效下注</p>
+                                        </th>
+                                        <th>
+                                            <p>小費</p>
+                                        </th>
+                                        <th>
+                                            <p>結果</p>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>2021-06-10 11:22:44</p>
+                                        </td>
+                                        <td>
+                                            <p>黃金古埃及</p>
+                                        </td>
+                                        <td>
+                                            <p>2fab013c06a146939fceb310af080bba1</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>4</p>
+                                        </td>
+                                        <td>
+                                            <p>0</p>
+                                        </td>
+                                        <td>
+                                            <p class="lose">-4</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </dic>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footerGroup">
+        <div class="footerGroup">
+            <div class="navGroup">
+                <ul>
+                    <li class="callNews_window"><p>最新公告</p></li>
+                    <li onclick="window.location.href='../html/event.html'"><p>優惠</p></li>
+                    <li onclick="window.location.href='../html/vip.html'"><p>VIP會員</p></li>
+                    <li onclick="window.location.href='../html/help.html'"><p>幫助中心</p></li>
+                    <li onclick="window.location.href='../html/help.html'"><p>關於我們</p></li> 
+                </ul>
+                <span>2021 AU8GAMING.COM</span>
+            </div>
+        </div>
+        </div>
+        <div class="footerTxt">
+            <p>
+                致力於成為世界頂級的在線娛樂公司。因此，在處理任何事情的時候，都會修先考慮客戶的利益。客戶的最大滿意就是我們的成功。
+            </p>
+            <p>
+                提供全天候24小時的在線客服，提供專業化和人性化相結合的最佳服務。
+            </p>
+        </div>
+    </footer>
+    <!-- 彈窗 -->
+    <div class="filter">
+         <!-- 注單明細 -->
+         <div class="jumpWindow dealDetail">
+            <div class="title">
+                <p>注單明細</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <p class="serialNum">編號
+                    <span>347</span>
+                </p>
+                <table class="dealJump">
+                    <tr>
+                        <th>
+                            <p>編號</p>
+                        </th>
+                        <th>
+                            <p>平臺</p>
+                        </th>
+                        <th>
+                            <p>金額</p>
+                        </th>
+                        <th>
+                            <p>日期</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>0952fa1c0b3a469b8a53223dfe6ec10e1</p>
+                        </td>
+                        <td>
+                            <p>BNG電子娛樂</p>
+                        </td>
+                        <td>
+                            <p>40</p>
+                        </td>
+                        <td>
+                            <p>2021-12-30 10:44:04</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 最新公告 -->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新消息</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="typeList">
+                        <button class="hot active">熱門</button>
+                        <button class="normal">一般</button>
+                        <button class="deposit">存款</button>
+                    </li>
+                    <ol class="hotBox display">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                    </ol>
+                    <ol class="normalBox">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                    </ol>
+                    <ol class="depositBox"></ol>
+                </ul>
+            </div>
+        </div>
+         <!-- 快速轉帳 -->
+         <div class="jumpWindow quickTransfer">
+            <div class="title">
+                <p>快速轉帳</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <form>
+                    <label>
+                        <p class="itemName">平台</p>
+                        <p class="platformName">36588</p>
+                    </label>
+                    <label>
+                        <p class="itemName">中心錢包</p>
+                        <input type="text" class="inputStyle_1" value="$9999" disabled>
+                    </label>
+                    <label>
+                        <i class="fa-solid fa-down-long"></i>
+                    </label>
+                    <label>
+                        <p class="itemName">BNG電子娛樂</p>
+                        <input type="text" class="inputStyle_1" value="$0" disabled>
+                    </label>
+                    <label>
+                        <p class="itemName">轉帳金額</p>
+                        <input type="text" class="inputStyle_1" value="$100">
+                        <div class="transferBtn_Box">
+                            <button type="button" class="btnStyle_3 active">
+                                <p>$100</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>$500</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>$1000</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>$3000</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>$5000</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>$10000</p>
+                            </button>
+                            <button type="button" class="btnStyle_3">
+                                <p>全部</p>
+                            </button>
+                        </div>
+                        <button type="button" class="btnStyle_1 checkBtn closeWindow">確定</button>
+                    </label>
+                </form>
+            </div>
+            <div class="btnBox">
+                <button class="btnStyle_1">進入遊戲</button>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div class="download">
+            <div class="icon">
+                <i></i>
+            </div>
+            <div class="txt">
+                <p>手機下載</p>
+            </div>
+        </div>
+        <ul class="service">
+            <li><i class="phone"></i></li>
+            <li><i class="line"></i></li>
+            <li><i class="weChat"></i></li>
+        </ul>
+        <div class="backTop display">
+            <div class="icon"></div>
+        </div>
+    </aside>
+</body>
+</html>
