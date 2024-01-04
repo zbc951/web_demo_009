@@ -14,7 +14,7 @@ header {
         height: 40px;
         background: $headerBg_3;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         position: relative;
         
         //登入
@@ -231,17 +231,6 @@ header {
             position: relative;
             z-index: 2;
             
-            &::before {
-                content:"";
-                background: $headerBg_1;
-                width: 1270px;
-                height: 40px;
-                position: absolute;
-                top: 0;
-                right: -10px;
-                transform: skew(-30deg);
-                z-index: -9;
-            }
             .center {
                 width: 1400px;
                 height: auto;
@@ -250,12 +239,21 @@ header {
                 justify-content: center;
                 margin: 0 auto;
 
+                //時間
+                .time {
+                    font-weight: bold;
+                    color: #b4bac8;
+                    font-size: 12px;
+                    line-height: 45px;
+                    flex-shrink: 0;
+                }
+
                 ul {
                     width: 100%;
                     height: auto;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-end;
 
                     .id {
                         width: auto;
@@ -266,12 +264,12 @@ header {
                         p {
                             font-size: 14px;
                             font-weight: bold;
-                            color: #7d0022;
+                            color: #ffa200;
                         }
                         em {
                             font-size: 14px;
                             font-weight: bold;
-                            color: #814c00;
+                            color: #ffffff;
                             padding: 0 10px;
                         }
                     }
@@ -288,6 +286,7 @@ header {
                             position: relative;
                             padding: 0 20px;
                             border: 1px solid #7d0022;
+                            border-radius: 5px;
                             background: #ffffff;
                             margin-right:10px;
                             cursor: pointer;
@@ -377,16 +376,16 @@ header {
                             display: flex;
         
                             button {
-                                width: 70px;
-                                height: 28px;
+                                width: 100px;
+                                height: 24px;
                                 background: $buttonbg_5;
-                                color: $mainColor_2;
+                                color: #ff5a00;
                                 border: 1px solid $borderColor_2;
                                 font-size: 15px;
                                 font-weight: bold;
                                 // padding: 0 10px;
                                 margin: 0 5px;
-                                border-radius: 2px;
+                                border-radius: 5px;
                                 
                                 &:hover,&:active,&.active {
                                     background: $buttonbg_7;
@@ -395,12 +394,12 @@ header {
                                 }
         
                                 &:last-child {
-                                    background: $buttonbg_6;
+                                    background: linear-gradient(to top, #ff5a00 0%, #ffa200 100%);
                                     color: $mainColor_1;
-                                    border: 1px solid $borderColor_3;
+                                    border: none;
         
                                     &:hover,&:active,&.active {
-                                        background: $buttonbg_3;
+                                        background: linear-gradient(to bottom, #ff5a00 0%, #ffa200 100%);
                                     }
                                 }
                             }
@@ -410,23 +409,21 @@ header {
                         width: auto;
                         height: auto;
                         position: relative;
+                        margin-left: 15px;
         
                         select {
-                            width: 87px;
-                            height: 28px;
+                            width: 100px;
+                            height: 24px;
                             font-size: 15px;
                             font-weight: bold;
                             padding-left: 5px;
-                            background: $buttonbg_6;
+                            background: #000000;
                             color: $mainColor_1;
-                            border: 1px solid $borderColor_3;
-                            border-radius: 2px;
-        
-                            &:hover,&:active,&.active {
-                                background: $buttonbg_4;
-                            }
+                            // border: 1px solid $borderColor_3;
+                            border-radius: 5px;
+
                             option {
-                                color: #000;
+                                color: #ffffff;
                             }
                         }
 
@@ -516,7 +513,7 @@ header {
         height: auto;
         // overflow: hidden;
         position: absolute;
-        top: 120px;
+        top: 130px;
         left: 0;
         transition: 0.3s all;
         display: none;

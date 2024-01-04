@@ -11,19 +11,7 @@ $(function(){
         $(this).siblings().removeClass('active');
     })
 })
-//登入/登出
-$(function(){
-    $('.loginbtn').click(function(){
-        $('.unlogin').removeClass('display');
-        $('.loginnow').addClass('display');
-        $('.account').addClass('turn');
-    })
-    $('.logoutbtn').click(function(){
-        $('.unlogin').addClass('display');
-        $('.loginnow').removeClass('display');
-        $('.account').removeClass('turn');
-    })
-})
+
 //圖片輪播
 $(document).on('ready', function () {
 	$(".single-item").slick({
@@ -482,32 +470,32 @@ $(function(){
 
 //下拉選單
 $(function(){
-    $("header .navGroup ul .sport").hover(function(){
+    $("header .bottom ul .sport").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .sport").addClass("display");
         $("header .downList .sport").siblings().removeClass("display");
     })
-    $("header .navGroup ul .live").hover(function(){
+    $("header .bottom ul .live").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .live").addClass("display");
         $("header .downList .live").siblings().removeClass("display");
     })
-    $("header .navGroup ul .slot").hover(function(){
+    $("header .bottom ul .slot").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .slot").addClass("display");
         $("header .downList .slot").siblings().removeClass("display");
     })
-    $("header .navGroup ul .ticket").hover(function(){
+    $("header .bottom ul .ticket").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .ticket").addClass("display");
         $("header .downList .ticket").siblings().removeClass("display");
     })
-    $("header .navGroup ul .fish").hover(function(){
+    $("header .bottom ul .fish").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .fish").addClass("display");
         $("header .downList .fish").siblings().removeClass("display");
     })
-    $("header .navGroup ul .board").hover(function(){
+    $("header .bottom ul .board").hover(function(){
         $("header .downList").toggleClass("display");
         $("header .downList .board").addClass("display");
         $("header .downList .board").siblings().removeClass("display");
@@ -578,7 +566,7 @@ $(function(){
     })
     
     //請先登入
-    $("header .navGroup, header .downList, .home, footer").click(function(){
+    $("header .bottom, header .downList, .home, footer").click(function(){
         if($(this).closest("body").hasClass("unlogin"))
         {
             $(".filter, .jumpWindow.plsLogin")
@@ -717,6 +705,16 @@ $(function(){
     //最新消息
     //忘記密碼
     $(".callNews_window").click(function(){
+        $(".jumpWindow")
+        .removeClass("display");
+
+        $(".filter, .jumpWindow.news")
+        .addClass("display");
+
+        
+    })
+
+    $("footer .top .bottomlist .news").click(function(){
         $(".jumpWindow")
         .removeClass("display");
 

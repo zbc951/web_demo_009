@@ -242,9 +242,9 @@ html body header .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 html body header .top .login {
@@ -510,19 +510,6 @@ html body header .top .afterLogin {
   position: relative;
   z-index: 2;
 }
-html body header .top .afterLogin::before {
-  content: "";
-  background: -webkit-gradient(linear, left top, right top, from(#ffe9c8), to(#caa279));
-  background: linear-gradient(to right, #ffe9c8 0%, #caa279 100%);
-  width: 1270px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  right: -10px;
-  -webkit-transform: skew(-30deg);
-          transform: skew(-30deg);
-  z-index: -9;
-}
 html body header .top .afterLogin .center {
   width: 1400px;
   height: auto;
@@ -537,6 +524,14 @@ html body header .top .afterLogin .center {
           justify-content: center;
   margin: 0 auto;
 }
+html body header .top .afterLogin .center .time {
+  font-weight: bold;
+  color: #b4bac8;
+  font-size: 12px;
+  line-height: 45px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 html body header .top .afterLogin .center ul {
   width: 100%;
   height: auto;
@@ -546,9 +541,9 @@ html body header .top .afterLogin .center ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 html body header .top .afterLogin .center ul .id {
   width: auto;
@@ -563,12 +558,12 @@ html body header .top .afterLogin .center ul .id {
 html body header .top .afterLogin .center ul .id p {
   font-size: 14px;
   font-weight: bold;
-  color: #7d0022;
+  color: #ffa200;
 }
 html body header .top .afterLogin .center ul .id em {
   font-size: 14px;
   font-weight: bold;
-  color: #814c00;
+  color: #ffffff;
   padding: 0 10px;
 }
 html body header .top .afterLogin .center ul .wallet {
@@ -590,6 +585,7 @@ html body header .top .afterLogin .center ul .wallet .total {
   position: relative;
   padding: 0 20px;
   border: 1px solid #7d0022;
+  border-radius: 5px;
   background: #ffffff;
   margin-right: 10px;
   cursor: pointer;
@@ -667,15 +663,15 @@ html body header .top .afterLogin .center ul .wallet .buttonGroup {
   display: flex;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button {
-  width: 70px;
-  height: 28px;
+  width: 100px;
+  height: 24px;
   background: #ffffff;
-  color: #c70036;
+  color: #ff5a00;
   border: 1px solid #7d0022;
   font-size: 15px;
   font-weight: bold;
   margin: 0 5px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:hover, html body header .top .afterLogin .center ul .wallet .buttonGroup button:active, html body header .top .afterLogin .center ul .wallet .buttonGroup button.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#333333), to(#242424));
@@ -684,38 +680,33 @@ html body header .top .afterLogin .center ul .wallet .buttonGroup button:hover, 
   border: 1px solid #f8deb8;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child {
-  background: -webkit-gradient(linear, left bottom, left top, from(#b50000), color-stop(45%, #bd0000), to(#fa0000));
-  background: linear-gradient(to top, #b50000 0%, #bd0000 45%, #fa0000 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff5a00), to(#ffa200));
+  background: linear-gradient(to top, #ff5a00 0%, #ffa200 100%);
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: none;
 }
 html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child:hover, html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child:active, html body header .top .afterLogin .center ul .wallet .buttonGroup button:last-child.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#0f7435), to(#223324));
-  background: linear-gradient(to top, #0f7435 0%, #223324 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5a00), to(#ffa200));
+  background: linear-gradient(to bottom, #ff5a00 0%, #ffa200 100%);
 }
 html body header .top .afterLogin .center ul .language {
   width: auto;
   height: auto;
   position: relative;
+  margin-left: 15px;
 }
 html body header .top .afterLogin .center ul .language select {
-  width: 87px;
-  height: 28px;
+  width: 100px;
+  height: 24px;
   font-size: 15px;
   font-weight: bold;
   padding-left: 5px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#b50000), color-stop(45%, #bd0000), to(#fa0000));
-  background: linear-gradient(to top, #b50000 0%, #bd0000 45%, #fa0000 100%);
+  background: #000000;
   color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-}
-html body header .top .afterLogin .center ul .language select:hover, html body header .top .afterLogin .center ul .language select:active, html body header .top .afterLogin .center ul .language select.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#d8a65d), to(#b57a3c));
-  background: linear-gradient(to top, #d8a65d 0%, #b57a3c 100%);
+  border-radius: 5px;
 }
 html body header .top .afterLogin .center ul .language select option {
-  color: #000;
+  color: #ffffff;
 }
 html body header .top .afterLogin .center ul .language i {
   width: 8px;
@@ -814,7 +805,7 @@ html body header .downList {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 120px;
+  top: 130px;
   left: 0;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -3241,7 +3232,7 @@ html body .registerWrap .signUpBlock .signBlock button.check {
   margin-bottom: 10px;
 }
 html body .innerPage {
-  padding: 120px 0 50px;
+  padding: 130px 0 50px;
 }
 html body .innerPage .marqueeGroup {
   width: 1400px;
@@ -5660,7 +5651,7 @@ html body header .downList {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 120px;
+  top: 130px;
   left: 0;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
