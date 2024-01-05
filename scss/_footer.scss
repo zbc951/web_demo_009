@@ -1,9 +1,11 @@
 //footer
 footer {
     width: 100%;
+    min-width: 1000px;
     height: 130px;
-    transform: translateY(130px);
-    margin-top: 70px;
+    position: absolute;
+    bottom: 0;
+    // transform: translateY(130px);
 
     //上部
     .top {

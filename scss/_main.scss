@@ -6,10 +6,10 @@ html {
     body {
         width: 100%;
         min-width: 1903px;
-        height: 100%;
+        height: auto;
         overflow: overlay;
         position: relative;
-        
+
         @import "./header";
         @import "./home";
         @import "./footer";

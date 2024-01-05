@@ -219,7 +219,7 @@ html {
 html body {
   width: 100%;
   min-width: 1903px;
-  height: 100%;
+  height: auto;
   overflow: overlay;
   position: relative;
 }
@@ -881,8 +881,7 @@ html body header .downList .listWrap .center ol li p {
 html body .home {
   width: 100%;
   height: auto;
-  -webkit-transform: translateY(130px);
-          transform: translateY(130px);
+  padding: 130px 0 130px;
 }
 html body .home article .single-item {
   width: 100%;
@@ -1840,10 +1839,10 @@ html body .home .gameGroup ul li p {
 }
 html body footer {
   width: 100%;
+  min-width: 1000px;
   height: 130px;
-  -webkit-transform: translateY(130px);
-          transform: translateY(130px);
-  margin-top: 70px;
+  position: absolute;
+  bottom: 0;
 }
 html body footer .top {
   width: 100%;
@@ -2083,7 +2082,7 @@ html body .swiper .swiper-button-next {
 html body .eventWrap {
   width: 100%;
   height: auto;
-  padding-top: 120px;
+  padding: 130px 0;
 }
 html body .eventWrap .eventTitle {
   width: 100%;
@@ -2506,6 +2505,7 @@ html body .gamePage_Wrap .center .marqueeWrap {
 html body .helpWrap {
   width: 100%;
   height: auto;
+  min-height: 72vh;
 }
 html body .helpWrap .helpBody {
   width: 1400px;
@@ -3232,7 +3232,7 @@ html body .registerWrap .signUpBlock .signBlock button.check {
   margin-bottom: 10px;
 }
 html body .innerPage {
-  padding: 130px 0 50px;
+  padding: 130px 0 130px;
 }
 html body .innerPage .marqueeGroup {
   width: 1400px;
